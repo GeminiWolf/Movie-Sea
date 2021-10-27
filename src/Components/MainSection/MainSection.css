@@ -1,0 +1,43 @@
+.content {
+    height: 90%;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.show-card {
+    padding: 10px;
+    width: calc(100vw / 3 -20px);
+    height: calc(100vh / 3 /2);
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+
+.show-card:hover{
+    transform: scale(1.2);
+}
+
+.show-card > img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 430px){
+    .content{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .show-card{
+        width: 100%;
+    }
+}
