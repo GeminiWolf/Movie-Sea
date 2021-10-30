@@ -8,6 +8,23 @@
     padding: 0 40px;
 }
 
+.nav-list{
+    display: flex;
+}
+
+.nav-list p {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-list p:hover {
+    border-bottom: 2px solid gray;
+}
+
+.active {
+    border-bottom: 2px solid gray;
+}
+
 .search-form{
     height: 60%;
     border-radius: 50%;
@@ -22,6 +39,14 @@
     background: transparent;
     border-bottom: 1px solid #000;
     outline: none;
+}
+
+.search-cross {
+    border-bottom: 1px solid #000;
+    padding-right: 10px;
+    height: 80%;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 .search-form > img {
